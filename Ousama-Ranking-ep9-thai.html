@@ -33,6 +33,8 @@
     .play-button { width: 80px; height: 80px; background: rgba(255, 255, 255, 0.2); border: 3px solid #fff; border-radius: 50%; position: relative; }
     .play-button::before { content: ''; position: absolute; left: 32%; top: 26%; width: 0; height: 0; border-left: 24px solid #fff; border-top: 16px solid transparent; border-bottom: 16px solid transparent; }
     footer { text-align: center; padding: 20px; background-color: #1f1f1f; color: #ccc; font-size: 0.9rem; margin-top: 40px; }
+    #histats_wrapper { width: 100%; text-align: center; margin-top: 30px; }
+    #histatsC { display: inline-block !important; float: none !important; }
   </style>
 </head>
 <body>
@@ -50,7 +52,7 @@
   </header>
   <main>
     <div class="video-title">Ousama Ranking อันดับพระราชา ตอนที่ 9 พากย์ไทย</div>
-    <div class="nav-buttons"><a href="Ousama-Ranking-ep8-thai.html">ก่อนหน้า</a><a href="Ousama-Ranking-thai.html">ทั้งหมด</a><a href="Ousama-Ranking-ep10-thai.html">ถัดไป</a><a href="Ousama-Ranking-ep8-thai.html">ก่อนหน้า</a><a href="Ousama-Ranking-ep10-thai.html">ถัดไป</a></div>
+    <div class="nav-buttons"><a href="Ousama-Ranking-ep8-thai.html">ก่อนหน้า</a><a href="Ousama-Ranking-thai.html">ทั้งหมด</a><a href="Ousama-Ranking-ep10-thai.html">ถัดไป</a></div>
   </main>
   <div class="video-fullscreen">
     <div id="video-overlay" onclick="showVideo()">
@@ -58,6 +60,27 @@
     </div>
     <iframe allow="autoplay" allowfullscreen id="videoIframe" src="" title="Ousama Ranking อันดับพระราชา ตอนที่ 9 พากย์ไทย"></iframe>
   </div>
+  <!-- Histats START -->
+  <div id="histats_wrapper"><div id="histats_counter"></div></div>
+  <script type="text/javascript">
+    var _Hasync = _Hasync || [];
+    _Hasync.push(['Histats.startgif', '1,4944258,4,10047,""']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function () {
+      var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+      hs.src = ('//s10.histats.com/js15_gif_as.js');
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();
+  </script>
+  <noscript>
+    <div id="histats_wrapper">
+      <a href="/" target="_blank"><div id="histatsC">
+        <img border="0" src="//s4is.histats.com/stats/i/4944258.gif?4944258&103">
+      </div></a>
+    </div>
+  </noscript>
+  <!-- Histats END -->
   <footer>© 2025 ANIME BK — ดูอนิเมะออนไลน์ อนิเมะ BK พากย์ไทย ซับไทย ครบทุกแนว</footer>
   <script>
     const menuToggle = document.getElementById('menuToggle');
@@ -75,28 +98,5 @@
       document.getElementById('video-overlay').style.display = 'none';
     }
   </script>
-
-<!-- Histats START -->
-<div id="histats_wrapper"><div id="histats_counter"></div></div>
-<script type="text/javascript">
-  var _Hasync = _Hasync || [];
-  _Hasync.push(['Histats.startgif', '1,4944258,4,10047,""']);
-  _Hasync.push(['Histats.fasi', '1']);
-  _Hasync.push(['Histats.track_hits', '']);
-  (function () {
-    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-    hs.src = ('//s10.histats.com/js15_gif_as.js');
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-  })();
-</script>
-<noscript>
-  <div id="histats_wrapper">
-    <a href="/" target="_blank"><div id="histatsC">
-      <img border="0" src="//s4is.histats.com/stats/i/4944258.gif?4944258&103">
-    </div></a>
-  </div>
-</noscript>
-<!-- Histats END -->
-
 </body>
 </html>
