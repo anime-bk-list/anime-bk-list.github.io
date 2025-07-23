@@ -33,6 +33,14 @@
     .play-button { width: 80px; height: 80px; background: rgba(255, 255, 255, 0.2); border: 3px solid #fff; border-radius: 50%; position: relative; }
     .play-button::before { content: ''; position: absolute; left: 32%; top: 26%; width: 0; height: 0; border-left: 24px solid #fff; border-top: 16px solid transparent; border-bottom: 16px solid transparent; }
     footer { text-align: center; padding: 20px; background-color: #1f1f1f; color: #ccc; font-size: 0.9rem; margin-top: 40px; }
+
+    /* ซ่อนตัวนับคนดู */
+    #histats_wrapper, #histatsC, #histats_counter {
+      display: none !important;
+      visibility: hidden;
+      height: 0;
+      overflow: hidden;
+    }
   </style>
 </head>
 <body>
@@ -79,12 +87,11 @@
       document.getElementById('video-overlay').style.display = 'none';
     }
   </script>
+
   <!-- Histats.com START -->
-  <style>
-    #histats_wrapper { width: 100%; text-align: center; margin-top: 30px; }
-    #histatsC { display: inline-block !important; float: none !important; }
-  </style>
-  <div id="histats_wrapper"><div id="histats_counter"></div></div>
+  <div id="histats_wrapper">
+    <div id="histats_counter"></div>
+  </div>
   <script type="text/javascript">
     var _Hasync = _Hasync || [];
     _Hasync.push(['Histats.startgif', '1,4944258,4,10047,""']);
